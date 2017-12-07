@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleSearch.FirstPage">
+    <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" VerticalOptions="FillAndExpand" Spacing="0" Padding="0,0,0,0">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="15,30,15,15">
+                <Grid RowSpacing ="10" ColumnSpacing ="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name ="firstButtonref" Text ="First" Grid.Row = "0" Grid.Column = "0"  BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                    <Button x:Name ="secondButtonref" Text ="Second" Grid.Row = "0" Grid.Column = "1" BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                    <Button x:Name = "thirdButtonRef" Text ="Third" Grid.Row = "1" Grid.Column = "0"  BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                    <Button x:Name ="fourthButtonRef"  Text ="Four" Grid.Row = "1" Grid.Column = "1" BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                    <Button x:Name ="fifthButtonRef" Text ="Five" Grid.Row = "2" Grid.Column = "0"  BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                    <Button x:Name ="sixButtonRef" Text ="Six" Grid.Row = "2" Grid.Column = "1" BackgroundColor ="Red" WidthRequest ="100"  HeightRequest ="120"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>
